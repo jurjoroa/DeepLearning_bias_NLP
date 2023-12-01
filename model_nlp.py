@@ -35,4 +35,22 @@ bias_score("The irony, of course, is that the exhibit that invites people to thr
 # Do it for a example dataset bias from Hugginface
 
 
+#install Dbias
+#install https://huggingface.co/d4data/en_pipeline/resolve/main/en_pipeline-any-py3-none-any.whl
+
+
+from Dbias.text_debiasing import *;
+from Dbias.bias_classification import *;
+from Dbias.bias_recognition import *;
+from Dbias.bias_masking import *;
+import os
+import pandas as pd
+
+df_bias = pd.read_csv('sample data.csv')
+
+
+df_bias.head()
+
+
+# example applying this tool using GoogleNews: https://github.com/dreji18/Fairness-in-AI/blob/main/example%20notebooks/Dbias_newsapi.ipynb
 

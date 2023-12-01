@@ -8,6 +8,7 @@ pandas = "*"
 numpy = "*"
 transformers = "*"
 tensorflow = "*"
+dbias = "*"
 
 [dev-packages]
 
