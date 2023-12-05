@@ -4,13 +4,18 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-pandas = "*"
-numpy = "*"
-transformers = "*"
+requests = "*"
+aif360 = "*"
+tqdm = "*"
+ipython = "*"
+aequitas = {git = "https://github.com/dssg/aequitas.git"}
+scikit-learn = "*"
+py-functions = "*"
 tensorflow = "*"
-dbias = "*"
+blackboxauditing = "*"
 
 [dev-packages]
+ipykernel = "*"
 
 [requires]
-python_version = "3.11"
+python_version = "3.9"
